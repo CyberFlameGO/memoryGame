@@ -1,3 +1,5 @@
+# coding=utf-8
+"""import the random module"""
 import random
 
 card_kv_store = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 6, 15: 7,
@@ -17,12 +19,11 @@ print("A * * * *\n"
       "\u2588",
       1, 2, 3, 4)
 
-#table_kv = {a1:1, a2: }
+# table_kv = {a1:1, a2: }
 
 row = input("Choose a line.").strip().lower()
 column = input("Choose a column.").strip().lower()
-#if line is i:
-
+# if line is i:
 
 
 print("A {} {} {} {}\n"
@@ -31,4 +32,3 @@ print("A {} {} {} {}\n"
       "D {} {} {} {}\n"
       "\u2588",
       1, 2, 3, 4)
-
