@@ -25,12 +25,12 @@ print("A * * * *\n"
 
 row = input("Choose a line.").strip().lower()
 column = int(input("Choose a column.").strip())
-if row in valid_rows and column in valid_columns:
+#if row in valid_rows and column in valid_columns:
 
 
 
 
-print("A {} {} {} {}\n"
+print("A {:.fdict.get[1]} {} {} {}\n"
       "B {} {} {} {}\n"
       "C {} {} {} {}\n"
       "D {} {} {} {}\n"
