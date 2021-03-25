@@ -17,11 +17,11 @@ print("A * * * *\n"
       "\u2588",
       1, 2, 3, 4)
 
-table_kv = {a1:1, a2: }
+#table_kv = {a1:1, a2: }
 
 row = input("Choose a line.").strip().lower()
 column = input("Choose a column.").strip().lower()
-if line is i:
+#if line is i:
 
 
 
