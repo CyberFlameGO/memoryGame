@@ -9,7 +9,6 @@ plot_number_translation = {"a1": 1, "a2": 2, "a3": 3, "a4": 4, "b1": 5, "b2": 6,
 valid_rows = ["a", "b", "c", "d"]
 valid_columns = ["1", "2", "3", "4"]
 
-
 card_list_values = list(card_kv_store.values())
 random.shuffle(card_list_values)
 
@@ -22,16 +21,34 @@ print("A * * * *\n"
       "D * * * *\n"
       "\u2588",
       1, 2, 3, 4)
+
 card_kv_store = card_kv_store.fromkeys(card_kv_store, "*")
-row = input("Choose a line.").strip().lower()
-column = str(input("Choose a column.").strip())
-if (row in valid_rows) and (column in valid_columns):
-    pos = row + column
-    numeric_pos = plot_number_translation.get(pos)
-    int(numeric_pos)
-    card_kv_store[numeric_pos] = card_list_values[numeric_pos+1]
 
+row1 = input("Choose a line.").strip().lower()
+column1 = str(input("Choose a column.").strip())
+if row1 in valid_rows and column1 in valid_columns:
+    pos1 = row1 + column1
+    numeric_pos1 = plot_number_translation.get(pos1)
+    int(numeric_pos1)
+    match1 = card_list_values[numeric_pos1 + 1]
+    plot1 = False
 
+row2 = input("Choose a line.").strip().lower()
+column2 = str(input("Choose a column.").strip())
+if row2 in valid_rows and column2 in valid_columns:
+    pos2 = row2 + column2
+    numeric_pos2 = plot_number_translation.get(pos2)
+    int(numeric_pos2)
+    match2 = card_list_values[numeric_pos2 + 1]
+
+if match1 == match2:
+    print("MATCH!")
+    card_kv_store[numeric_pos1] = match1
+    card_kv_store[numeric_pos2] = match2
+else:
+    print(
+        f"{pos2.title()} does not match {pos1.title()} unfortunately.\n{pos1.title()} is {match1} and {pos2.title()} "
+        f"is {match2} though!")
 print("A {} {} {} {}\n"
       "B {} {} {} {}\n"
       "C {} {} {} {}\n"
@@ -41,3 +58,5 @@ print("A {} {} {} {}\n"
                       card_kv_store.get(9), card_kv_store.get(10), card_kv_store.get(11), card_kv_store.get(12),
                       card_kv_store.get(13), card_kv_store.get(14), card_kv_store.get(15), card_kv_store.get(16)),
       1, 2, 3, 4)
+if "*" not in card_kv_store:
+    print("Well done! Game completed, would you like to play another round?")
