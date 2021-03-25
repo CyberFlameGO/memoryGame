@@ -1,3 +1,4 @@
+"""Matching game"""
 # coding=utf-8
 
 import random
