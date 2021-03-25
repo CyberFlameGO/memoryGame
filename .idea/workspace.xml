@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="stuf">
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -33,9 +32,6 @@
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="nmq9rcpb" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1qB4NW0mSqalCSgYMU9Syo7cUug" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -104,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616539609293</updated>
       <workItem from="1616539631701" duration="5815000" />
-      <workItem from="1616643819926" duration="6512000" />
+      <workItem from="1616643819926" duration="8646000" />
     </task>
     <task id="LOCAL-00001" summary="thing">
       <created>1616540343814</created>
@@ -176,7 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616648168380</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="stuf">
+      <created>1616651271971</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1616651271971</updated>
+    </task>
+    <task id="LOCAL-00012" summary="stuf">
+      <created>1616651283827</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616651283827</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +211,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="stuf" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/memoryGame$main.coverage" NAME="main Coverage Results" MODIFIED="1616650740475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/memoryGame$main.coverage" NAME="main Coverage Results" MODIFIED="1616653428624" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
