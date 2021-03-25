@@ -24,6 +24,15 @@ valid_columns = ["1", "2", "3", "4"]
 
 playing = True
 
+print("Welcome to a round of Memory Game!\nThis is what the board looks like!\n\n"
+      "A * * * *\n"
+      "B * * * *\n"
+      "C * * * *\n"
+      "D * * * *\n"
+      "\u2588",
+      1, 2, 3, 4,
+      "\nYou choose a position by its line (row) number and column letter, kinda like in Chess! I hope you enjoy!\n\n")
+
 while playing:
     card_list_values = list(card_kv_store.values())
     random.shuffle(card_list_values)
@@ -65,7 +74,9 @@ while playing:
         print(
             f"{pos2.title()} does not match {pos1.title()} unfortunately.\n{pos1.title()} is {match1} and "
             f"{pos2.title()} "
-            f"is {match2} though!")
+            f"is {match2} though!"
+            "\n\nWe'll be hiding these values in 3 seconds, so memorize up!")
+        clear_py_console(3, 1000)
     print("A {} {} {} {}\n"
           "B {} {} {} {}\n"
           "C {} {} {} {}\n"
