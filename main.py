@@ -48,7 +48,7 @@ while playing:
           "\u2588",
           1, 2, 3, 4)
     card_kv_store = card_kv_store.fromkeys(card_kv_store, "*")
-# This is just a prototype. Maybe for the actual thing, I'll make it just one question per position
+    # This is just a prototype. Maybe for the actual thing, I'll make it just one question per position
     # 'while' statements need to be made, but it's important to make sure they're separate so if there's an invalid
     # value at the second position input, it doesn't take you back to position one
     row1 = input("Choose a line.").strip().lower()

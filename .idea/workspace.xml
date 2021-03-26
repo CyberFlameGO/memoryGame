@@ -1,7 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="OMG it WORKS (extremely messy tho)">
+    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="comment 51/52&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;">
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage-5.5.dist-info/INSTALLER" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage-5.5.dist-info/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage-5.5.dist-info/METADATA" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage-5.5.dist-info/RECORD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage-5.5.dist-info/REQUESTED" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage-5.5.dist-info/WHEEL" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage-5.5.dist-info/entry_points.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage-5.5.dist-info/top_level.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/__main__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/annotate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/backward.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/bytecode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/cmdline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/collector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/context.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/control.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/debug.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/disposition.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/env.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/execfile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/fullcoverage/encodings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/html.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/htmlfiles/coverage_html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/htmlfiles/favicon_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/htmlfiles/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/htmlfiles/jquery.ba-throttle-debounce.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/htmlfiles/jquery.hotkeys.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/htmlfiles/jquery.isonscreen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/htmlfiles/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/htmlfiles/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/htmlfiles/keybd_closed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/htmlfiles/keybd_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/htmlfiles/pyfile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/htmlfiles/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/htmlfiles/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/inorout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/jsonreport.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/misc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/multiproc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/numbits.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/phystokens.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/plugin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/plugin_support.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/python.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/pytracer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/report.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/results.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/sqldata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/summary.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/templite.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/tomlconfig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/tracer.cpython-39-darwin.so" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/venv_home/lib/python3.9/site-packages/coverage/xmlreport.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -101,6 +160,7 @@
       <updated>1616539609293</updated>
       <workItem from="1616539631701" duration="5815000" />
       <workItem from="1616643819926" duration="11274000" />
+      <workItem from="1616730873337" duration="369000" />
     </task>
     <task id="LOCAL-00001" summary="thing">
       <created>1616540343814</created>
@@ -228,7 +288,28 @@
       <option name="project" value="LOCAL" />
       <updated>1616710707772</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fix code">
+      <created>1616711121294</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1616711121294</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fix code">
+      <created>1616711331002</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1616711331002</updated>
+    </task>
+    <task id="LOCAL-00021" summary="comment 51/52&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;">
+      <created>1616711354513</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1616711354513</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +333,9 @@
     <MESSAGE value="thing" />
     <MESSAGE value="stuf" />
     <MESSAGE value="OMG it WORKS (extremely messy tho)" />
-    <option name="LAST_COMMIT_MESSAGE" value="OMG it WORKS (extremely messy tho)" />
+    <MESSAGE value="fix code" />
+    <MESSAGE value="comment 51/52&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment 51/52&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
