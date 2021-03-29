@@ -49,6 +49,7 @@ while playing:
     round_in_progress: bool = True
     error_catching = True
     plotting = True
+    identical_plot = True
 
     while round_in_progress:
         print("A {} {} {} {}\n"
@@ -99,17 +100,20 @@ while playing:
                     print("Invalid input! Please use a round number.")
             error_catching = True
 
-            if row2 in valid_rows and 1 <= column2 <= 4 and not (row1 and column1):
-                column2 = str(column2)
-                pos2: str = row2 + column2  # adds the variables into one "word" (the colon after the var-name is for
-                # annotation, which was a suggestion from my IDE)
-                numeric_pos2 = plot_number_translation.get(pos2)  # translates the plotted point into a number
-                int(numeric_pos2)  # makes sure it is of integer datatype (for the final script I'll check if this is
-                # redundant)
-                match2 = card_list_values[numeric_pos2 + 1]
-                # plotting = False
-                plotting = False
+            if (row2 in valid_rows and 1 <= column2 <= 4):
+                if row2 != row1 and column2 != column1:
+                    column2 = str(column2)
+                    pos2: str = row2 + column2  # adds the variables into one "word" (the colon after the var-name is for
+                    # annotation, which was a suggestion from my IDE)
+                    numeric_pos2 = plot_number_translation.get(pos2)  # translates the plotted point into a number
+                    int(numeric_pos2)  # makes sure it is of integer datatype (for the final script I'll check if this is
+                    # redundant)
+                    match2 = card_list_values[numeric_pos2 + 1]
+                    # plotting = False
+                    plotting = False
 
+                else:
+                    print("Identical inputs are not allowed.")
             else:
                 print("Invalid input, try again.")
         plotting = True
