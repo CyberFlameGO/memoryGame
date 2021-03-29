@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="add coverage&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="add some functionality&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +106,7 @@
       <updated>1616539609293</updated>
       <workItem from="1616539631701" duration="5815000" />
       <workItem from="1616643819926" duration="11274000" />
-      <workItem from="1616730873337" duration="2425000" />
+      <workItem from="1616730873337" duration="2513000" />
     </task>
     <task id="LOCAL-00001" summary="thing">
       <created>1616540343814</created>
@@ -272,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616731302837</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="add some functionality&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;">
+      <created>1616734055231</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1616734055231</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +303,8 @@
     <MESSAGE value="fix code" />
     <MESSAGE value="comment 51/52&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
     <MESSAGE value="add coverage&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add coverage&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
+    <MESSAGE value="add some functionality&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some functionality&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
