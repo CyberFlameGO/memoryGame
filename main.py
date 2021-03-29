@@ -6,7 +6,7 @@ import time
 
 
 # a function to clear x amount of lines after a specified period of time (in seconds)
-def clear_py_console(sec, lines):
+def clear_py_console(sec, lines) -> object:
     """
 # doctype recommended by my ide
     :param sec: int
@@ -63,10 +63,7 @@ while playing:
                               card_kv_store.get(16)),
               1, 2, 3, 4)
         # This is just a prototype. Maybe for the actual thing, I'll make it just one question per position
-        # 'while' statements need to be made, but it's important to make sure they're separate so if there's an invalid
-        # value at the second position input, it doesn't take you back to position one
 
-        # TODO: add else statements to catch out-of-bounds input arguments
         while plotting:
             while error_catching:
                 row1 = input("Choose a line.").strip().lower()
@@ -100,7 +97,7 @@ while playing:
                     print("Invalid input! Please use a round number.")
             error_catching = True
 
-            if (row2 in valid_rows and 1 <= column2 <= 4):
+            if row2 in valid_rows and 1 <= column2 <= 4:
                 if row2 != row1 and column2 != column1:
                     column2 = str(column2)
                     pos2: str = row2 + column2  # adds the variables into one "word" (the colon after the var-name is
