@@ -46,10 +46,11 @@ while playing:
     #    for val in range(len(card_kv_store)):
     #        card_kv_store[val] = card_list_values[val - 1]
     #        print(card_kv_store[val])
-    round_in_progress = True
+    round_in_progress: bool = True
     error_catching = True
     plotting = True
-    while playing:  # this is meant to be round_in_progress
+
+    while round_in_progress:  # this is meant to be round_in_progress
         print("A {} {} {} {}\n"
               "B {} {} {} {}\n"
               "C {} {} {} {}\n"
@@ -65,15 +66,16 @@ while playing:
         # value at the second position input, it doesn't take you back to position one
 
         # TODO: add else statements to catch out-of-bounds input arguments
-        while playing:
+        while error_catching:
             row1 = input("Choose a line.").strip().lower()
             try:
                 column1 = int(input("Choose a column.").strip())
-                playing = False  # change to error_catching
+                error_catching = False  # change to error_catching
             except ValueError:
                 print("Invalid input! Please use a round number.")
-        playing = True
-        while playing:
+        error_catching = True
+
+        while plotting:
             if row1 in valid_rows and 1 <= column1 <= 4:
                 column1 = str(column1)
                 pos1: str = row1 + column1  # adds the variables into one "word" (the colon after the var-name is for
@@ -82,18 +84,22 @@ while playing:
                 int(numeric_pos1)
                 match1 = card_list_values[numeric_pos1 + 1]
                 # plotting = False
-                playing = False
-        playing = True
+                plotting = False
 
-        while playing:
+            else:
+                print("Invalid input, try again.")
+        plotting = True
+
+        while error_catching:
             row2 = input("Choose a line.").strip().lower()
             try:
                 column2 = int(input("Choose a column.").strip())
-                playing = False  # change to error_catching
+                error_catching = False  # change to error_catching
             except ValueError:
                 print("Invalid input! Please use a round number.")
-        playing = True
-        while playing:
+        error_catching = True
+
+        while plotting:
             if row2 in valid_rows and 1 <= column2 <= 4:
                 column2 = str(column2)
                 pos2: str = row2 + column2  # adds the variables into one "word" (the colon after the var-name is for
@@ -103,19 +109,26 @@ while playing:
                 # redundant)
                 match2 = card_list_values[numeric_pos2 + 1]
                 # plotting = False
-                playing = False
-        playing = True
+                plotting = False
+
+            else:
+                print("Invalid input, try again.")
+        plotting = True
+
         if match1 == match2:
             print("MATCH!")
             card_kv_store[numeric_pos1] = match1
             card_kv_store[numeric_pos2] = match2
+
         else:
             print(
                 f"{pos2.title()} does not match {pos1.title()} unfortunately.\n{pos1.title()} is {match1} and "
                 f"{pos2.title()} "
                 f"is {match2} though!"
                 "\n\nWe'll be hiding these values in 3 seconds, so memorize up!")
+
             clear_py_console(3, 1000)
+
         if "*" not in card_kv_store.values():
             round_in_progress = False
             # TODO: potentially add a stopwatch
