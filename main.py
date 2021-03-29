@@ -101,7 +101,7 @@ while playing:
             error_catching = True
 
             if row2 in valid_rows and 1 <= column2 <= 4:
-                if row1 != row2 and column1 != column2:
+                if row1 != row2 or column1 != column2:
                     column2 = str(column2)
                     pos2: str = row2 + column2  # adds the variables into one "word" (the colon after the var-name is
                     # for annotation, which was a suggestion from my IDE)
