@@ -35,13 +35,15 @@ print("Welcome to a round of Memory Game!\nThis is what the board looks like!\n\
 while playing:
     card_list_values = list(card_kv_store.values())
     random.shuffle(card_list_values)
-
+    card_kv_store = card_kv_store.fromkeys(card_kv_store, "*")
     # Old code that doesn't do anything anymore, but kept here anyways
     #    for val in range(len(card_kv_store)):
     #        card_kv_store[val] = card_list_values[val - 1]
     #        print(card_kv_store[val])
     round_in_progress = True
-    while round_in_progress:
+    error_catching = True
+    plotting = True
+    while playing: # this is meant to be round_in_progress
         print("A {} {} {} {}\n"
               "B {} {} {} {}\n"
               "C {} {} {} {}\n"
@@ -51,29 +53,43 @@ while playing:
                               card_kv_store.get(9), card_kv_store.get(10), card_kv_store.get(11), card_kv_store.get(12),
                               card_kv_store.get(13), card_kv_store.get(14), card_kv_store.get(15), card_kv_store.get(16)),
               1, 2, 3, 4)
-        card_kv_store = card_kv_store.fromkeys(card_kv_store, "*")
         # This is just a prototype. Maybe for the actual thing, I'll make it just one question per position
         # 'while' statements need to be made, but it's important to make sure they're separate so if there's an invalid
         # value at the second position input, it doesn't take you back to position one
 
         # TODO: add else statements to catch out-of-bounds input arguments
-        row1 = input("Choose a line.").strip().lower()
-        column1 = str(input("Choose a column.").strip())
-        row2 = input("Choose a line.").strip().lower()
-        column2 = str(input("Choose a column.").strip())
-        if row1 in valid_rows and 1 <= column1 <= 4:
-            pos1 = row1 + column1
-            numeric_pos1 = plot_number_translation.get(pos1)
-            int(numeric_pos1)
-            match1 = card_list_values[numeric_pos1 + 1]
-            plot1 = False
+        while playing: #change this to plotting
+            row1 = input("Choose a line.").strip().lower()
+            column1 = int(input("Choose a column.").strip())
 
-        if row2 in valid_rows and 1 <= column2 <= 4:
-            pos2 = row2 + column2
-            numeric_pos2 = plot_number_translation.get(pos2)
-            int(numeric_pos2)
-            match2 = card_list_values[numeric_pos2 + 1]
+            if row1 in valid_rows and 1 <= column1 <= 4:
+                column1 = str(column1)
+                pos1 = row1 + column1
+                numeric_pos1 = plot_number_translation.get(pos1)
+                int(numeric_pos1)
+                match1 = card_list_values[numeric_pos1 + 1]
+                #plotting = False
+                playing = False
+        playing = True
 
+        while playing:
+            row2 = input("Choose a line.").strip().lower()
+            try:
+                column2 = int(input("Choose a column.").strip())
+                playing = False #change to error_catching
+            except ValueError:
+                print("Invalid input! Please use a round number.")
+        playing = True
+        while playing:
+            if row2 in valid_rows and 1 <= column2 <= 4:
+                column2 = str(column2)
+                pos2 = row2 + column2
+                numeric_pos2 = plot_number_translation.get(pos2)
+                int(numeric_pos2)
+                match2 = card_list_values[numeric_pos2 + 1]
+                #plotting = False
+                playing = False
+        playing = True
         if match1 == match2:
             print("MATCH!")
             card_kv_store[numeric_pos1] = match1
