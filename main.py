@@ -66,16 +66,16 @@ while playing:
         # value at the second position input, it doesn't take you back to position one
 
         # TODO: add else statements to catch out-of-bounds input arguments
-        while error_catching:
-            row1 = input("Choose a line.").strip().lower()
-            try:
-                column1 = int(input("Choose a column.").strip())
-                error_catching = False  # change to error_catching
-            except ValueError:
-                print("Invalid input! Please use a round number.")
-        error_catching = True
-
         while plotting:
+            while error_catching:
+                row1 = input("Choose a line.").strip().lower()
+                try:
+                    column1 = int(input("Choose a column.").strip())
+                    error_catching = False  # change to error_catching
+                except ValueError:
+                    print("Invalid input! Please use a round number.")
+            error_catching = True
+
             if row1 in valid_rows and 1 <= column1 <= 4:
                 column1 = str(column1)
                 pos1: str = row1 + column1  # adds the variables into one "word" (the colon after the var-name is for
@@ -85,23 +85,22 @@ while playing:
                 match1 = card_list_values[numeric_pos1 + 1]
                 # plotting = False
                 plotting = False
-
             else:
                 print("Invalid input, try again.")
-                continue
+
         plotting = True
 
-        while error_catching:
-            row2 = input("Choose a line.").strip().lower()
-            try:
-                column2 = int(input("Choose a column.").strip())
-                error_catching = False  # change to error_catching
-            except ValueError:
-                print("Invalid input! Please use a round number.")
-        error_catching = True
-
         while plotting:
-            if row2 in valid_rows and 1 <= column2 <= 4:
+            while error_catching:
+                row2 = input("Choose a line.").strip().lower()
+                try:
+                    column2 = int(input("Choose a column.").strip())
+                    error_catching = False  # change to error_catching
+                except ValueError:
+                    print("Invalid input! Please use a round number.")
+            error_catching = True
+
+            if not (not (row2 in valid_rows) or not (1 <= column2 <= 4) or column1) and row1:
                 column2 = str(column2)
                 pos2: str = row2 + column2  # adds the variables into one "word" (the colon after the var-name is for
                 # annotation, which was a suggestion from my IDE)
@@ -114,7 +113,6 @@ while playing:
 
             else:
                 print("Invalid input, try again.")
-                continue
         plotting = True
 
         if match1 == match2:
