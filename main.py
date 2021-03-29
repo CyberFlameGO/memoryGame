@@ -88,6 +88,7 @@ while playing:
 
             else:
                 print("Invalid input, try again.")
+                continue
         plotting = True
 
         while error_catching:
@@ -113,6 +114,7 @@ while playing:
 
             else:
                 print("Invalid input, try again.")
+                continue
         plotting = True
 
         if match1 == match2:
