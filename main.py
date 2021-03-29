@@ -72,7 +72,7 @@ while playing:
                 row1 = input("Choose a line.").strip().lower()
                 try:
                     column1 = int(input("Choose a column.").strip())
-                    error_catching = False  # change to error_catching
+                    error_catching = False
                 except ValueError:
                     print("Invalid input! Please use a round number.")
             error_catching = True
