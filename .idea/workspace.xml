@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="Remove specific versions so it always asks for latest version.&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;">
+    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="Cleans up valid columns.">
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +109,7 @@
       <workItem from="1616539631701" duration="5815000" />
       <workItem from="1616643819926" duration="11274000" />
       <workItem from="1616730873337" duration="2513000" />
-      <workItem from="1616976292662" duration="810000" />
+      <workItem from="1616976292662" duration="1227000" />
     </task>
     <task id="LOCAL-00001" summary="thing">
       <created>1616540343814</created>
@@ -300,7 +300,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616976629536</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="I'm gonna try and make my commit messages somewhat useful. &#10;This commit adds a loop for the round">
+      <created>1616977161919</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1616977161919</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Cleans up valid columns.">
+      <created>1616977448441</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1616977448441</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +345,10 @@
     <MESSAGE value="d" />
     <MESSAGE value="Fix requirements.txt so it's actually useful&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
     <MESSAGE value="Remove specific versions so it always asks for latest version.&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove specific versions so it always asks for latest version.&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
+    <MESSAGE value="I'm goa" />
+    <MESSAGE value="I'm gonna try and make my commit messages somewhat useful. &#10;This commit adds a loop for the round" />
+    <MESSAGE value="Cleans up valid columns." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleans up valid columns." />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />

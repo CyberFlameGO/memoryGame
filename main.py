@@ -55,6 +55,8 @@ while playing:
         # This is just a prototype. Maybe for the actual thing, I'll make it just one question per position
         # 'while' statements need to be made, but it's important to make sure they're separate so if there's an invalid
         # value at the second position input, it doesn't take you back to position one
+
+        # TODO: add else statements to catch out-of-bounds input arguments
         row1 = input("Choose a line.").strip().lower()
         column1 = str(input("Choose a column.").strip())
         row2 = input("Choose a line.").strip().lower()
