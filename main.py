@@ -154,7 +154,7 @@ while playing:
                 "Well done! Game completed, would you like to play another round?\nType 'y' to play another round, "
                 "or anything else to finish this session.\nInput: ").lower().strip()
             if round_end == "y":
-                print("dope!")
+                print("Alright! Next round incoming. . .")
             else:
                 print("Your wins this session:", wins)
                 playing = False
