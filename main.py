@@ -6,6 +6,9 @@ import time
 
 
 # a function to clear x amount of lines after a specified period of time (in seconds)
+from typing import List
+
+
 def clear_py_console(sec, lines) -> object:
     """
 # doctype recommended by my ide
@@ -23,7 +26,7 @@ card_kv_store = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 1, 10: 2, 11
 plot_number_translation = {"a1": 1, "a2": 2, "a3": 3, "a4": 4, "b1": 5, "b2": 6, "b3": 7, "b4": 8, "c1": 9, "c2": 10,
                            "c3": 11, "c4": 12, "d1": 13, "d2": 14, "d3": 15, "d4": 16}
 # row letters which are valid in input
-valid_rows = ["a", "b", "c", "d"]
+valid_rows: list[str] = ["a", "b", "c", "d"]
 # win counter (starting at 0)
 wins = 0
 # main while loop variable
