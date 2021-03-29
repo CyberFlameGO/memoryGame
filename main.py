@@ -20,7 +20,6 @@ card_kv_store = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 1, 10: 2, 11
 plot_number_translation = {"a1": 1, "a2": 2, "a3": 3, "a4": 4, "b1": 5, "b2": 6, "b3": 7, "b4": 8, "c1": 9, "c2": 10,
                            "c3": 11, "c4": 12, "d1": 13, "d2": 14, "d3": 15, "d4": 16}
 valid_rows = ["a", "b", "c", "d"]
-valid_columns = ["1", "2", "3", "4"]
 wins = 0
 playing = True
 
@@ -60,14 +59,14 @@ while playing:
         column1 = str(input("Choose a column.").strip())
         row2 = input("Choose a line.").strip().lower()
         column2 = str(input("Choose a column.").strip())
-        if row1 in valid_rows and column1 in valid_columns:
+        if row1 in valid_rows and 1 <= column1 <= 4:
             pos1 = row1 + column1
             numeric_pos1 = plot_number_translation.get(pos1)
             int(numeric_pos1)
             match1 = card_list_values[numeric_pos1 + 1]
             plot1 = False
 
-        if row2 in valid_rows and column2 in valid_columns:
+        if row2 in valid_rows and 1 <= column2 <= 4:
             pos2 = row2 + column2
             numeric_pos2 = plot_number_translation.get(pos2)
             int(numeric_pos2)
