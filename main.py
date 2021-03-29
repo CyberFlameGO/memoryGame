@@ -37,70 +37,73 @@ while playing:
     card_list_values = list(card_kv_store.values())
     random.shuffle(card_list_values)
 
+    # Old code that doesn't do anything anymore, but kept here anyways
     #    for val in range(len(card_kv_store)):
     #        card_kv_store[val] = card_list_values[val - 1]
     #        print(card_kv_store[val])
-
-    print("A {} {} {} {}\n"
-          "B {} {} {} {}\n"
-          "C {} {} {} {}\n"
-          "D {} {} {} {}\n"
-          "\u2588".format(card_kv_store.get(1), card_kv_store.get(2), card_kv_store.get(3), card_kv_store.get(4),
-                          card_kv_store.get(5), card_kv_store.get(6), card_kv_store.get(7), card_kv_store.get(8),
-                          card_kv_store.get(9), card_kv_store.get(10), card_kv_store.get(11), card_kv_store.get(12),
-                          card_kv_store.get(13), card_kv_store.get(14), card_kv_store.get(15), card_kv_store.get(16)),
-          1, 2, 3, 4)
-    card_kv_store = card_kv_store.fromkeys(card_kv_store, "*")
-    # This is just a prototype. Maybe for the actual thing, I'll make it just one question per position
-    # 'while' statements need to be made, but it's important to make sure they're separate so if there's an invalid
-    # value at the second position input, it doesn't take you back to position one
-    row1 = input("Choose a line.").strip().lower()
-    column1 = str(input("Choose a column.").strip())
-    row2 = input("Choose a line.").strip().lower()
-    column2 = str(input("Choose a column.").strip())
-    if row1 in valid_rows and column1 in valid_columns:
-        pos1 = row1 + column1
-        numeric_pos1 = plot_number_translation.get(pos1)
-        int(numeric_pos1)
-        match1 = card_list_values[numeric_pos1 + 1]
-        plot1 = False
-
-    if row2 in valid_rows and column2 in valid_columns:
-        pos2 = row2 + column2
-        numeric_pos2 = plot_number_translation.get(pos2)
-        int(numeric_pos2)
-        match2 = card_list_values[numeric_pos2 + 1]
-
-    if match1 == match2:
-        print("MATCH!")
-        card_kv_store[numeric_pos1] = match1
-        card_kv_store[numeric_pos2] = match2
-    else:
-        print(
-            f"{pos2.title()} does not match {pos1.title()} unfortunately.\n{pos1.title()} is {match1} and "
-            f"{pos2.title()} "
-            f"is {match2} though!"
-            "\n\nWe'll be hiding these values in 3 seconds, so memorize up!")
-        clear_py_console(3, 1000)
-    if "*" not in card_kv_store.values():
-        round_in_progress = False
-        # TODO: potentially add a stopwatch
-        wins += 1
-        print("Looks like you paired up all the numbers!\n"
-              "A {} {} {} {}\n"
+    round_in_progress = True
+    while round_in_progress:
+        print("A {} {} {} {}\n"
               "B {} {} {} {}\n"
               "C {} {} {} {}\n"
               "D {} {} {} {}\n"
               "\u2588".format(card_kv_store.get(1), card_kv_store.get(2), card_kv_store.get(3), card_kv_store.get(4),
                               card_kv_store.get(5), card_kv_store.get(6), card_kv_store.get(7), card_kv_store.get(8),
                               card_kv_store.get(9), card_kv_store.get(10), card_kv_store.get(11), card_kv_store.get(12),
-                              card_kv_store.get(13), card_kv_store.get(14), card_kv_store.get(15),
-                              card_kv_store.get(16)),
+                              card_kv_store.get(13), card_kv_store.get(14), card_kv_store.get(15), card_kv_store.get(16)),
               1, 2, 3, 4)
-        round_end = input(
-            "Well done! Game completed, would you like to play another round?\nType 'y' to play another round, "
-            "or anything else to finish this session.\nInput: ").lower().strip()
-        if round_end == "y":
-            print("dope!")
+        card_kv_store = card_kv_store.fromkeys(card_kv_store, "*")
+        # This is just a prototype. Maybe for the actual thing, I'll make it just one question per position
+        # 'while' statements need to be made, but it's important to make sure they're separate so if there's an invalid
+        # value at the second position input, it doesn't take you back to position one
+        row1 = input("Choose a line.").strip().lower()
+        column1 = str(input("Choose a column.").strip())
+        row2 = input("Choose a line.").strip().lower()
+        column2 = str(input("Choose a column.").strip())
+        if row1 in valid_rows and column1 in valid_columns:
+            pos1 = row1 + column1
+            numeric_pos1 = plot_number_translation.get(pos1)
+            int(numeric_pos1)
+            match1 = card_list_values[numeric_pos1 + 1]
+            plot1 = False
+
+        if row2 in valid_rows and column2 in valid_columns:
+            pos2 = row2 + column2
+            numeric_pos2 = plot_number_translation.get(pos2)
+            int(numeric_pos2)
+            match2 = card_list_values[numeric_pos2 + 1]
+
+        if match1 == match2:
+            print("MATCH!")
+            card_kv_store[numeric_pos1] = match1
+            card_kv_store[numeric_pos2] = match2
         else:
-            print("Your wins this session:", wins)
+            print(
+                f"{pos2.title()} does not match {pos1.title()} unfortunately.\n{pos1.title()} is {match1} and "
+                f"{pos2.title()} "
+                f"is {match2} though!"
+                "\n\nWe'll be hiding these values in 3 seconds, so memorize up!")
+            clear_py_console(3, 1000)
+        if "*" not in card_kv_store.values():
+            round_in_progress = False
+            # TODO: potentially add a stopwatch
+            wins += 1
+            print("Looks like you paired up all the numbers!\n"
+                  "A {} {} {} {}\n"
+                  "B {} {} {} {}\n"
+                  "C {} {} {} {}\n"
+                  "D {} {} {} {}\n"
+                  "\u2588".format(card_kv_store.get(1), card_kv_store.get(2), card_kv_store.get(3), card_kv_store.get(4),
+                                  card_kv_store.get(5), card_kv_store.get(6), card_kv_store.get(7), card_kv_store.get(8),
+                                  card_kv_store.get(9), card_kv_store.get(10), card_kv_store.get(11), card_kv_store.get(12),
+                                  card_kv_store.get(13), card_kv_store.get(14), card_kv_store.get(15),
+                                  card_kv_store.get(16)),
+                  1, 2, 3, 4)
+            round_end = input(
+                "Well done! Game completed, would you like to play another round?\nType 'y' to play another round, "
+                "or anything else to finish this session.\nInput: ").lower().strip()
+            if round_end == "y":
+                print("dope!")
+            else:
+                print("Your wins this session:", wins)
+                playing = False

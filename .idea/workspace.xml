@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="Fix requirements.txt so it's actually useful&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="Remove specific versions so it always asks for latest version.&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,7 @@
       <workItem from="1616539631701" duration="5815000" />
       <workItem from="1616643819926" duration="11274000" />
       <workItem from="1616730873337" duration="2513000" />
-      <workItem from="1616976292662" duration="314000" />
+      <workItem from="1616976292662" duration="810000" />
     </task>
     <task id="LOCAL-00001" summary="thing">
       <created>1616540343814</created>
@@ -293,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616976570823</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Remove specific versions so it always asks for latest version.&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;">
+      <created>1616976629536</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1616976629536</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +330,8 @@
     <MESSAGE value="add some functionality&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
     <MESSAGE value="d" />
     <MESSAGE value="Fix requirements.txt so it's actually useful&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix requirements.txt so it's actually useful&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
+    <MESSAGE value="Remove specific versions so it always asks for latest version.&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove specific versions so it always asks for latest version.&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -360,6 +368,6 @@
     </GetOptions>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/memoryGame$main.coverage" NAME="main Coverage Results" MODIFIED="1616976415665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/memoryGame$main.coverage" NAME="main Coverage Results" MODIFIED="1616976867531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
