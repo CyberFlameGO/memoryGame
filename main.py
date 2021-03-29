@@ -1,29 +1,35 @@
-"""Matching game"""
-# coding=utf-8
-
+# coding=utf-8  # ^ encoding requested by my IDE
+"""Matching game"""  # doctype requested by my IDE
+# imports for the project
 import random
 import time
 
 
+# a function to clear x amount of lines after a specified period of time (in seconds)
 def clear_py_console(sec, lines):
     """
-
+# doctype recommended by my ide
     :param sec: int
     :param lines: int
     """
-    time.sleep(sec)
-    print("\n" * lines)
+    time.sleep(sec)  # sleeps for a period of time specified when the function is called
+    print("\n" * lines)  # sends a newline * specified amount (effectively clearing the console)
 
 
+# Dictionary which stores all the values to be used in the game
 card_kv_store = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 6, 15: 7,
                  16: 8}
+# dictionary to translate all possible plot-points to numbers
 plot_number_translation = {"a1": 1, "a2": 2, "a3": 3, "a4": 4, "b1": 5, "b2": 6, "b3": 7, "b4": 8, "c1": 9, "c2": 10,
                            "c3": 11, "c4": 12, "d1": 13, "d2": 14, "d3": 15, "d4": 16}
+# row letters which are valid in input
 valid_rows = ["a", "b", "c", "d"]
+# win counter (starting at 0)
 wins = 0
+# main while loop variable
 playing = True
 
-print("Welcome to a round of Memory Game!\nThis is what the board looks like!\n\n"
+print("Welcome to a game of Memory Game!\nThis is what the board looks like!\n\n"
       "A * * * *\n"
       "B * * * *\n"
       "C * * * *\n"
@@ -70,8 +76,9 @@ while playing:
         while playing:
             if row1 in valid_rows and 1 <= column1 <= 4:
                 column1 = str(column1)
-                pos1: str = row1 + column1
-                numeric_pos1 = plot_number_translation.get(pos1)
+                pos1: str = row1 + column1  # adds the variables into one "word" (the colon after the var-name is for
+                # annotation, which was a suggestion from my IDE)
+                numeric_pos1 = plot_number_translation.get(pos1)  # translates the plotted point into a number
                 int(numeric_pos1)
                 match1 = card_list_values[numeric_pos1 + 1]
                 # plotting = False
@@ -89,9 +96,11 @@ while playing:
         while playing:
             if row2 in valid_rows and 1 <= column2 <= 4:
                 column2 = str(column2)
-                pos2: str = row2 + column2
-                numeric_pos2 = plot_number_translation.get(pos2)
-                int(numeric_pos2)
+                pos2: str = row2 + column2  # adds the variables into one "word" (the colon after the var-name is for
+                # annotation, which was a suggestion from my IDE)
+                numeric_pos2 = plot_number_translation.get(pos2)  # translates the plotted point into a number
+                int(numeric_pos2)  # makes sure it is of integer datatype (for the final script I'll check if this is
+                # redundant)
                 match2 = card_list_values[numeric_pos2 + 1]
                 # plotting = False
                 playing = False
