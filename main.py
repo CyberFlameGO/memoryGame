@@ -50,7 +50,7 @@ while playing:
     error_catching = True
     plotting = True
 
-    while round_in_progress:  # this is meant to be round_in_progress
+    while round_in_progress:
         print("A {} {} {} {}\n"
               "B {} {} {} {}\n"
               "C {} {} {} {}\n"
@@ -83,7 +83,6 @@ while playing:
                 numeric_pos1 = plot_number_translation.get(pos1)  # translates the plotted point into a number
                 int(numeric_pos1)
                 match1 = card_list_values[numeric_pos1 + 1]
-                # plotting = False
                 plotting = False
             else:
                 print("Invalid input, try again.")
@@ -100,7 +99,7 @@ while playing:
                     print("Invalid input! Please use a round number.")
             error_catching = True
 
-            if not (not (row2 in valid_rows) or not (1 <= column2 <= 4) or column1) and row1:
+            if row2 in valid_rows and 1 <= column2 <= 4 and not (row1 and column1):
                 column2 = str(column2)
                 pos2: str = row2 + column2  # adds the variables into one "word" (the colon after the var-name is for
                 # annotation, which was a suggestion from my IDE)
