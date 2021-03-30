@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="style: adds comments" />
+    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="style: adds annotation to variables">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +111,7 @@
       <workItem from="1616730873337" duration="2513000" />
       <workItem from="1616976292662" duration="1252000" />
       <workItem from="1616988947496" duration="10520000" />
-      <workItem from="1617143833458" duration="1651000" />
+      <workItem from="1617143833458" duration="3586000" />
     </task>
     <task id="LOCAL-00001" summary="thing">
       <created>1616540343814</created>
@@ -440,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617145374553</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="style: adds annotation to variables">
+      <created>1617146208193</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1617146208193</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +470,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="stuf" />
     <MESSAGE value="OMG it WORKS (extremely messy tho)" />
     <MESSAGE value="fix code" />
     <MESSAGE value="comment 51/52&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
@@ -486,7 +494,8 @@
     <MESSAGE value="fix: fixes a few errors&#10;style: adds comments, removes redundant code" />
     <MESSAGE value="style: adds comments, removes redundant code" />
     <MESSAGE value="style: adds comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="style: adds comments" />
+    <MESSAGE value="style: adds annotation to variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: adds annotation to variables" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
