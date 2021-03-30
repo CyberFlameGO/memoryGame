@@ -4,12 +4,14 @@
 import random
 import time
 
+
 # a function to clear x amount of lines after a specified period of time (in seconds)
 
 
-def clear_py_console(sec, lines) -> object:
+def clear_py_console(sec: object, lines: object) -> object:
     """
 # doctype recommended by my ide
+    :rtype: object
     :param sec: int
     :param lines: int
     """
@@ -18,17 +20,18 @@ def clear_py_console(sec, lines) -> object:
 
 
 # Dictionary which stores all the values to be used in the game
-card_kv_store = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 6, 15: 7,
-                 16: 8}
+card_kv_store: dict = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 6, 15: 7,
+                       16: 8}
 # dictionary to translate all possible plot-points to numbers
-plot_number_translation = {"a1": 1, "a2": 2, "a3": 3, "a4": 4, "b1": 5, "b2": 6, "b3": 7, "b4": 8, "c1": 9, "c2": 10,
-                           "c3": 11, "c4": 12, "d1": 13, "d2": 14, "d3": 15, "d4": 16}
+plot_number_translation: dict[str, int] = {"a1": 1, "a2": 2, "a3": 3, "a4": 4, "b1": 5, "b2": 6, "b3": 7, "b4": 8,
+                                           "c1": 9, "c2": 10,
+                                           "c3": 11, "c4": 12, "d1": 13, "d2": 14, "d3": 15, "d4": 16}
 # row letters which are valid in input
 valid_rows: list[str] = ["a", "b", "c", "d"]
 # win counter (starting at 0)
-wins = 0
+wins: int = 0
 # main while loop variable
-playing = True
+playing: bool = True
 
 # prints board layout to introduce the user to the game
 print("Welcome to a game of Memory Game!\nThis is what the board looks like!\n\n"
@@ -73,42 +76,42 @@ while playing:
             while error_catching:
                 # asks the user for a row (this is just part of the loop of asking for a plot, invalid input is
                 # caught later on
-                row1 = input("Please choose a row.\n").strip().lower()
+                row1: str = input("Please choose a row.\n").strip().lower()
                 try:
                     # asks the user for input as an integer (this seems redundant but it means i don't have a
                     # valid_columns list at the top, and allows for easier 'if' statement code
-                    column1 = int(input("Please choose a column.\n").strip())
+                    column1: int = int(input("Please choose a column.\n").strip())
                     error_catching = False  # if there are no errors raised we proceed to the next part of the code
                 # catches errors for incorrect datatype
                 except ValueError:
                     print("Invalid input! Please use a round number.")  # tells the user they didn't type an integer
-            error_catching = True  # changes the variable to True because the code is recycled later on
+            error_catching: bool = True  # changes the variable to True because the code is recycled later on
             # if the inputted rows and columns are valid
             if row1 in valid_rows and 1 <= column1 <= 4:
                 # adds the variables into one "word" (the colon after the var-name is for annotation, which was a
                 # suggestion from my IDE)
                 pos1: str = row1 + str(column1)
-                numeric_pos1 = plot_number_translation.get(pos1)  # translates the plotted point into a number
+                numeric_pos1: int = plot_number_translation.get(pos1)  # translates the plotted point into a number
                 # gets the shuffled number which corresponds with the translated number (adds a 1 to account for the
                 # list starting at 0)
-                match1 = card_list_values[numeric_pos1 + 1]
-                plotting = False  # plotted position was in correct bounds so we escape the loop
+                match1: str = card_list_values[numeric_pos1 + 1]
+                plotting: bool = False  # plotted position was in correct bounds so we escape the loop
             else:
                 print("Invalid input, try again.")  # the user's input was out of bounds
 
-        plotting = True  # beep boop, recycled variable
+        plotting: bool = True  # beep boop, recycled variable
 
         while plotting:
             while error_catching:
                 # asks the user for row2, pretty much duplicated from the plot 1 code
-                row2 = input("Choose a line.").strip().lower()
+                row2: str = input("Choose a line.").strip().lower()
                 # error-catches again
                 try:
-                    column2 = int(input("Choose a column.").strip())
-                    error_catching = False
+                    column2: int = int(input("Choose a column.").strip())
+                    error_catching: bool = False
                 except ValueError:
                     print("Invalid input! Please use a round number.")
-            error_catching = True
+            error_catching: bool = True
             # same as before
             if row2 in valid_rows and 1 <= column2 <= 4:
                 # makes sure the input isn't identical to the first plot point, and if it is, notifies the user and
@@ -121,18 +124,21 @@ while playing:
                     pos2: str = row2 + str(column2)
                     numeric_pos2 = plot_number_translation.get(pos2)  # translates the plotted point into a number
                     match2 = card_list_values[numeric_pos2 + 1]
-                    plotting = False  # plotted position was in correct bounds so we escape the loop
+                    plotting: bool = False  # plotted position was in correct bounds so we escape the loop
             else:
                 print("Invalid input, try again.")
-        plotting = True  # beep boop, recycled variable
+        plotting: bool = True  # beep boop, recycled variable
 
-# if both of the inputs match
+        # if both of the inputs match
         if match1 == match2:
             # we tell the user it was a match
             print("MATCH!")
             # puts the numbers back in the dictionary so it gets printed
-            card_kv_store[numeric_pos1] = match1
-            card_kv_store[numeric_pos2] = match2
+            # for some reason my IDE suggests i assert something?
+            assert isinstance(match1, object)
+            card_kv_store[numeric_pos1]: str = match1
+            assert isinstance(match2, object)
+            card_kv_store[numeric_pos2]: str = match2
         # otherwise if there's not a match, we tell the user both numbers then clear after 3 seconds
         else:
             print(
@@ -145,7 +151,7 @@ while playing:
         # checks if there are no * chars in the dict (which means the user has completed the game)
         if "*" not in card_kv_store.values():
             # round is no longer in progress
-            round_in_progress = False
+            round_in_progress: bool = False
             # adds the win to the user
             wins += 1
             # shows the user the completed table
@@ -164,7 +170,7 @@ while playing:
                                   card_kv_store.get(16)),
                   1, 2, 3, 4)
             # asks the user if they would like to keep playing
-            round_end = input(
+            round_end: str = input(
                 "Well done! Game completed, would you like to play another round?\nType 'y' to play another round, "
                 "or anything else to finish this session.\nInput: ").lower().strip()
             # if yes print next round incoming and go to the top of the code (repeat the while loop
@@ -174,7 +180,7 @@ while playing:
             else:
                 print("Your wins this session:", wins)
                 # turns off while loop and doesn't go back to start of loop as it has ended
-                playing = False
+                playing: bool = False
 # end of game
 print("Thanks for playing!")
 # raises the exit error, pretty much what sys.exit() does
