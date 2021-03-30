@@ -6,7 +6,6 @@ import time
 
 
 # a function to clear x amount of lines after a specified period of time (in seconds)
-from typing import List
 
 
 def clear_py_console(sec, lines) -> object:
@@ -32,6 +31,7 @@ wins = 0
 # main while loop variable
 playing = True
 
+# prints board layout to introduce the user to the game
 print("Welcome to a game of Memory Game!\nThis is what the board looks like!\n\n"
       "A * * * *\n"
       "B * * * *\n"
@@ -41,20 +41,23 @@ print("Welcome to a game of Memory Game!\nThis is what the board looks like!\n\n
       1, 2, 3, 4,
       "\nYou choose a position by its line (row) number and column letter, kinda like in Chess! I hope you enjoy!\n\n")
 
+# loop for the game
 while playing:
+    # turns the dict into a list
     card_list_values = list(card_kv_store.values())
+    # shuffles said list
     random.shuffle(card_list_values)
+    # turns all keys into asterisks
     card_kv_store = card_kv_store.fromkeys(card_kv_store, "*")
-    # Old code that doesn't do anything anymore, but kept here anyways
-    #    for val in range(len(card_kv_store)):
-    #        card_kv_store[val] = card_list_values[val - 1]
-    #        print(card_kv_store[val])
+    # boolean variables for use in 'while' loops
     round_in_progress: bool = True
-    error_catching = True
-    plotting = True
-    identical_plot = True
+    error_catching: bool = True
+    plotting: bool = True
+    identical_plot: bool = True
 
+    # code for each round
     while round_in_progress:
+        # prints out the current "board"
         print("A {} {} {} {}\n"
               "B {} {} {} {}\n"
               "C {} {} {} {}\n"
@@ -65,30 +68,36 @@ while playing:
                               card_kv_store.get(13), card_kv_store.get(14), card_kv_store.get(15),
                               card_kv_store.get(16)),
               1, 2, 3, 4)
-        # This is just a prototype. Maybe for the actual thing, I'll make it just one question per position
-
+        # when the user plots a point (chooses rows and columns)
         while plotting:
+            # catches errors (specifically catching integer ValueError)
             while error_catching:
-                row1 = input("Choose a line.").strip().lower()
+                # asks the user for a row (this is just part of the loop of asking for a plot, invalid input is
+                # caught later on
+                row1 = input("Please choose a row.\n").strip().lower()
                 try:
-                    column1 = int(input("Choose a column.").strip())
-                    error_catching = False
+                    # asks the user for input as an integer (this seems redundant but it means i don't have a
+                    # valid_columns list at the top, and allows for easier 'if' statement code
+                    column1 = int(input("Please choose a column.\n").strip())
+                    error_catching = False  # if there are no errors raised we proceed to the next part of the code
+                # catches errors for incorrect datatype
                 except ValueError:
-                    print("Invalid input! Please use a round number.")
-            error_catching = True
-
+                    print("Invalid input! Please use a round number.")  # tells the user they didn't type an integer
+            error_catching = True  # changes the variable to True because the code is recycled later on
+            # if the inputted rows and columns are valid
             if row1 in valid_rows and 1 <= column1 <= 4:
-                column1 = str(column1)
-                pos1: str = row1 + column1  # adds the variables into one "word" (the colon after the var-name is for
-                # annotation, which was a suggestion from my IDE)
+                # adds the variables into one "word" (the colon after the var-name is for annotation, which was a
+                # suggestion from my IDE)
+                pos1: str = row1 + str(column1)
                 numeric_pos1 = plot_number_translation.get(pos1)  # translates the plotted point into a number
-                int(numeric_pos1)
+                # gets the shuffled number which corresponds with the translated number (adds a 1 to account for the
+                # list starting at 0)
                 match1 = card_list_values[numeric_pos1 + 1]
-                plotting = False
+                plotting = False  # plotted position was in correct bounds so we escape the loop
             else:
-                print("Invalid input, try again.")
+                print("Invalid input, try again.")  # the user's input was out of bounds
 
-        plotting = True
+        plotting = True  # beep boop, recycled variable
 
         while plotting:
             while error_catching:
@@ -99,21 +108,16 @@ while playing:
                 except ValueError:
                     print("Invalid input! Please use a round number.")
             error_catching = True
-
             if row2 in valid_rows and 1 <= column2 <= 4:
-                if row1 != row2 or column1 != column2:
-                    column2 = str(column2)
-                    pos2: str = row2 + column2  # adds the variables into one "word" (the colon after the var-name is
+                if row1 == row2 and column1 == column2:
+                    print("Identical inputs are not allowed.")
+                else:
+                    pos2: str = row2 + (column2)  # adds the variables into one "word" (the colon after the var-name is
                     # for annotation, which was a suggestion from my IDE)
                     numeric_pos2 = plot_number_translation.get(pos2)  # translates the plotted point into a number
-                    int(numeric_pos2)  # makes sure it is of integer datatype (for the final script I'll check if
-                    # this is redundant)
+                    # int(numeric_pos2)  # this seems redundant so i'm commenting it out
                     match2 = card_list_values[numeric_pos2 + 1]
-                    # plotting = False
-                    plotting = False
-
-                else:
-                    print("Identical inputs are not allowed.")
+                    plotting = False  # plotted position was in correct bounds so we escape the loop
             else:
                 print("Invalid input, try again.")
         plotting = True
