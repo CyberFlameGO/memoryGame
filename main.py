@@ -4,7 +4,6 @@
 import random
 import time
 
-
 # a function to clear x amount of lines after a specified period of time (in seconds)
 
 
@@ -141,13 +140,15 @@ while playing:
                 f"{pos2.title()} "
                 f"is {match2} though!"
                 "\n\nWe'll be hiding these values in 3 seconds, so memorize up!")
-
+            # this is calling the function i made at the top of the file
             clear_py_console(3, 1000)
-
+        # checks if there are no * chars in the dict (which means the user has completed the game)
         if "*" not in card_kv_store.values():
+            # round is no longer in progress
             round_in_progress = False
-            # TODO: potentially add a stopwatch
+            # adds the win to the user
             wins += 1
+            # shows the user the completed table
             print("Looks like you paired up all the numbers!\n"
                   "A {} {} {} {}\n"
                   "B {} {} {} {}\n"
@@ -162,11 +163,19 @@ while playing:
                                   card_kv_store.get(13), card_kv_store.get(14), card_kv_store.get(15),
                                   card_kv_store.get(16)),
                   1, 2, 3, 4)
+            # asks the user if they would like to keep playing
             round_end = input(
                 "Well done! Game completed, would you like to play another round?\nType 'y' to play another round, "
                 "or anything else to finish this session.\nInput: ").lower().strip()
+            # if yes print next round incoming and go to the top of the code (repeat the while loop
             if round_end == "y":
                 print("Alright! Next round incoming. . .")
+            # else finish the game
             else:
                 print("Your wins this session:", wins)
+                # turns off while loop and doesn't go back to start of loop as it has ended
                 playing = False
+# end of game
+print("Thanks for playing!")
+# raises the exit error, pretty much what sys.exit() does
+raise SystemExit

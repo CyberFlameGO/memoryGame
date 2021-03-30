@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="fix: fixes a few errors&#10;style: adds comments, removes redundant code">
+    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="style: adds comments, removes redundant code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -112,6 +112,7 @@
       <workItem from="1616730873337" duration="2513000" />
       <workItem from="1616976292662" duration="1252000" />
       <workItem from="1616988947496" duration="10520000" />
+      <workItem from="1617143833458" duration="1287000" />
     </task>
     <task id="LOCAL-00001" summary="thing">
       <created>1616540343814</created>
@@ -428,7 +429,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617063535206</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="style: adds comments, removes redundant code">
+      <created>1617063999325</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1617063999325</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -473,7 +481,8 @@
     <MESSAGE value="style: fixed style" />
     <MESSAGE value="workspace update" />
     <MESSAGE value="fix: fixes a few errors&#10;style: adds comments, removes redundant code" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: fixes a few errors&#10;style: adds comments, removes redundant code" />
+    <MESSAGE value="style: adds comments, removes redundant code" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: adds comments, removes redundant code" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
