@@ -101,32 +101,40 @@ while playing:
 
         while plotting:
             while error_catching:
+                # asks the user for row2, pretty much duplicated from the plot 1 code
                 row2 = input("Choose a line.").strip().lower()
+                # error-catches again
                 try:
                     column2 = int(input("Choose a column.").strip())
-                    error_catching = False  # change to error_catching
+                    error_catching = False
                 except ValueError:
                     print("Invalid input! Please use a round number.")
             error_catching = True
+            # same as before
             if row2 in valid_rows and 1 <= column2 <= 4:
+                # makes sure the input isn't identical to the first plot point, and if it is, notifies the user and
+                # makes the user input a new value
                 if row1 == row2 and column1 == column2:
                     print("Identical inputs are not allowed.")
+                # if not identical (aka else), continue along with the code (which is pretty much identical to
+                # plot-point 1
                 else:
-                    pos2: str = row2 + (column2)  # adds the variables into one "word" (the colon after the var-name is
-                    # for annotation, which was a suggestion from my IDE)
+                    pos2: str = row2 + str(column2)
                     numeric_pos2 = plot_number_translation.get(pos2)  # translates the plotted point into a number
-                    # int(numeric_pos2)  # this seems redundant so i'm commenting it out
                     match2 = card_list_values[numeric_pos2 + 1]
                     plotting = False  # plotted position was in correct bounds so we escape the loop
             else:
                 print("Invalid input, try again.")
-        plotting = True
+        plotting = True  # beep boop, recycled variable
 
+# if both of the inputs match
         if match1 == match2:
+            # we tell the user it was a match
             print("MATCH!")
+            # puts the numbers back in the dictionary so it gets printed
             card_kv_store[numeric_pos1] = match1
             card_kv_store[numeric_pos2] = match2
-
+        # otherwise if there's not a match, we tell the user both numbers then clear after 3 seconds
         else:
             print(
                 f"{pos2.title()} does not match {pos1.title()} unfortunately.\n{pos1.title()} is {match1} and "
