@@ -76,11 +76,11 @@ while playing:
             while error_catching:
                 # asks the user for a row (this is just part of the loop of asking for a plot, invalid input is
                 # caught later on
-                row1: str = input("Please choose a row.\n").strip().lower()
+                row1: str = input("Please choose a row: ").strip().lower()
                 try:
                     # asks the user for input as an integer (this seems redundant but it means i don't have a
                     # valid_columns list at the top, and allows for easier 'if' statement code
-                    column1: int = int(input("Please choose a column.\n").strip())
+                    column1: int = int(input("Please choose a column: ").strip())
                     error_catching = False  # if there are no errors raised we proceed to the next part of the code
                 # catches errors for incorrect datatype
                 except ValueError:
@@ -104,10 +104,10 @@ while playing:
         while plotting:
             while error_catching:
                 # asks the user for row2, pretty much duplicated from the plot 1 code
-                row2: str = input("Please choose a row.\n").strip().lower()
+                row2: str = input("Please choose a row: ").strip().lower()
                 # error-catches again
                 try:
-                    column2: int = int(input("Please choose a column.\n").strip())
+                    column2: int = int(input("Please choose a column: ").strip())
                     error_catching: bool = False
                 except ValueError:
                     print("Invalid input! Please use a round number.")
