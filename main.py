@@ -94,7 +94,7 @@ while playing:
                 numeric_pos1: int = plot_number_translation.get(pos1)  # translates the plotted point into a number
                 # gets the shuffled number which corresponds with the translated number (adds a 1 to account for the
                 # list starting at 0)
-                match1: str = card_list_values[numeric_pos1 + 1]
+                match1: str = card_list_values[numeric_pos1 - 1]
                 plotting: bool = False  # plotted position was in correct bounds so we escape the loop
             else:
                 print("Invalid input, try again.")  # the user's input was out of bounds
@@ -123,7 +123,7 @@ while playing:
                 else:
                     pos2: str = row2 + str(column2)
                     numeric_pos2 = plot_number_translation.get(pos2)  # translates the plotted point into a number
-                    match2 = card_list_values[numeric_pos2 + 1]
+                    match2 = card_list_values[numeric_pos2 - 1]
                     plotting: bool = False  # plotted position was in correct bounds so we escape the loop
             else:
                 print("Invalid input, try again.")
