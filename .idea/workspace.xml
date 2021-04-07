@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="looks gooderer" />
+    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="lol">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/19380.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -66,7 +74,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.documentation.PythonDocumentationConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -100,7 +108,7 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
-    <configuration>$USER_HOME$/.subversion</configuration>
+    <configuration>C:\Users\19380\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -122,20 +130,6 @@
       <workItem from="1617752457062" duration="566000" />
       <workItem from="1617753042908" duration="174000" />
       <workItem from="1617753230805" duration="202000" />
-    </task>
-    <task id="LOCAL-00008" summary="thing">
-      <created>1616645230431</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1616645230431</updated>
-    </task>
-    <task id="LOCAL-00009" summary="thing">
-      <created>1616647141928</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1616647141928</updated>
     </task>
     <task id="LOCAL-00010" summary="stuf">
       <created>1616648168380</created>
@@ -466,7 +460,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617754756339</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="emooogify code lol mad?">
+      <created>1617755165137</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1617755165137</updated>
+    </task>
+    <task id="LOCAL-00058" summary="lol">
+      <created>1617755309262</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1617755309262</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,8 +495,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Remove specific versions so it always asks for latest version.&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
-    <MESSAGE value="I'm goa" />
     <MESSAGE value="I'm gonna try and make my commit messages somewhat useful. &#10;This commit adds a loop for the round" />
     <MESSAGE value="Cleans up valid columns." />
     <MESSAGE value="adds TODO" />
@@ -512,7 +518,9 @@
     <MESSAGE value="ae" />
     <MESSAGE value="fix: i swear i have big brain no kill pls" />
     <MESSAGE value="looks gooderer" />
-    <option name="LAST_COMMIT_MESSAGE" value="looks gooderer" />
+    <MESSAGE value="emooogify code lol mad?" />
+    <MESSAGE value="lol" />
+    <option name="LAST_COMMIT_MESSAGE" value="lol" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />

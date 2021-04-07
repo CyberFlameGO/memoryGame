@@ -11,6 +11,7 @@ import time
 def clear_py_console(sec: object, lines: object) -> object:
     """
 # doctype recommended by my ide
+    :type sec: float
     :rtype: object
     :param sec: int
     :param lines: int
