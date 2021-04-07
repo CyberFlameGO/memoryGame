@@ -156,7 +156,7 @@ while playing:
             # adds the win to the user
             wins += 1
             # shows the user the completed table
-            print("Looks like you paired up all the numbers!\n"
+            print("✨ Looks like you paired up all the numbers! ✨\n"
                   "A {} {} {} {}\n"
                   "B {} {} {} {}\n"
                   "C {} {} {} {}\n"
