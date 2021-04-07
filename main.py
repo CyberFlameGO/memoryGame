@@ -20,7 +20,7 @@ def clear_py_console(sec: object, lines: object) -> object:
 
 
 # Dictionary which stores all the values to be used in the game
-card_kv_store: dict = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 6, 15: 7,
+card_kv_store: dict[int] = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 6, 15: 7,
                        16: 8}
 # dictionary to translate all possible plot-points to numbers
 plot_number_translation: dict[str, int] = {"a1": 1, "a2": 2, "a3": 3, "a4": 4, "b1": 5, "b2": 6, "b3": 7, "b4": 8,
