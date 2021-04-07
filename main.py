@@ -84,7 +84,7 @@ while playing:
                     error_catching = False  # if there are no errors raised we proceed to the next part of the code
                 # catches errors for incorrect datatype
                 except ValueError:
-                    print("Invalid input! Please use a round number.")  # tells the user they didn't type an integer
+                    print("⚠ Invalid input! Please use a round number.")  # tells the user they didn't type an integer
             error_catching: bool = True  # changes the variable to True because the code is recycled later on
             # if the inputted rows and columns are valid
             if row1 in valid_rows and 1 <= column1 <= 4:
@@ -97,7 +97,7 @@ while playing:
                 match1: str = card_list_values[numeric_pos1 - 1]
                 plotting: bool = False  # plotted position was in correct bounds so we escape the loop
             else:
-                print("Invalid input, try again.")  # the user's input was out of bounds
+                print("⚠ Invalid input, try again.")  # the user's input was out of bounds
 
         plotting: bool = True  # beep boop, recycled variable
 
@@ -110,14 +110,14 @@ while playing:
                     column2: int = int(input("Please choose a column: ").strip())
                     error_catching: bool = False
                 except ValueError:
-                    print("Invalid input! Please use a round number.")
+                    print("⚠ Invalid input! Please use a round number.")
             error_catching: bool = True
             # same as before
             if row2 in valid_rows and 1 <= column2 <= 4:
                 # makes sure the input isn't identical to the first plot point, and if it is, notifies the user and
                 # makes the user input a new value
                 if row1 == row2 and column1 == column2:
-                    print("Identical inputs are not allowed.")
+                    print("⚠ Identical inputs are not allowed.")
                 # if not identical (aka else), continue along with the code (which is pretty much identical to
                 # plot-point 1
                 else:
@@ -126,13 +126,13 @@ while playing:
                     match2 = card_list_values[numeric_pos2 - 1]
                     plotting: bool = False  # plotted position was in correct bounds so we escape the loop
             else:
-                print("Invalid input, try again.")
+                print("⚠ Invalid input, try again.")
         plotting: bool = True  # beep boop, recycled variable
 
         # if both of the inputs match
         if match1 == match2:
             # we tell the user it was a match
-            print("MATCH!")
+            print("👏 MATCH!")
             # puts the numbers back in the dictionary so it gets printed
             # for some reason my IDE suggests i assert something?
             assert isinstance(match1, object)
@@ -145,7 +145,7 @@ while playing:
                 f"{pos2.title()} does not match {pos1.title()} unfortunately.\n{pos1.title()} is {match1} and "
                 f"{pos2.title()} "
                 f"is {match2} though!"
-                "\n\nWe'll be hiding these values in 3 seconds, so memorize up!")
+                "\n\nWe'll be hiding these values in 3 seconds, so memorize up❗")
             # this is calling the function i made at the top of the file
             clear_py_console(3, 1000)
         # checks if there are no * chars in the dict (which means the user has completed the game)
