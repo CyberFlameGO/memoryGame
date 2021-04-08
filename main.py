@@ -105,10 +105,10 @@ while playing:
         while plotting:
             while error_catching:
                 # asks the user for row2, pretty much duplicated from the plot 1 code
-                row2: str = input("Please choose a row: ").strip().lower()
+                row2: str = input("Please choose your second selection's row: ").strip().lower()
                 # error-catches again
                 try:
-                    column2: int = int(input("Please choose a column: ").strip())
+                    column2: int = int(input("Please choose your second selection's column: ").strip())
                     error_catching: bool = False
                 except ValueError:
                     print("⚠ Invalid input! Please use a round number.")
