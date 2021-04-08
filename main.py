@@ -18,9 +18,13 @@ def clear_py_console(sec: object, lines: object) -> object:
     """
     time.sleep(sec)  # sleeps for a period of time specified when the function is called
     print("\n" * lines)  # sends a newline * specified amount (effectively clearing the console)
-
+s
 
 def game_board_print() -> object:
+    """
+    :rtype: object
+
+    """
     print("   ", 1, 2, 3, 4, "\n"
                              "  \u2588 \u2588 \u2588 \u2588 \u2588 \u2588\n"
                              "A \u2588 {} {} {} {} \u2588 A\n"
