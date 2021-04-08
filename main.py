@@ -20,6 +20,32 @@ def clear_py_console(sec: object, lines: object) -> object:
     print("\n" * lines)  # sends a newline * specified amount (effectively clearing the console)
 
 
+def game_board_print() -> object:
+    print("   ", 1, 2, 3, 4, "\n"
+                             "  \u2588 \u2588 \u2588 \u2588 \u2588 \u2588\n"
+                             "A \u2588 {} {} {} {} \u2588 A\n"
+                             "B \u2588 {} {} {} {} \u2588 B\n"
+                             "C \u2588 {} {} {} {} \u2588 C\n"
+                             "D \u2588 {} {} {} {} \u2588 D\n"
+                             "  \u2588 \u2588 \u2588 \u2588 \u2588 \u2588\n   ".format(card_kv_store.get(1),
+                                                                                       card_kv_store.get(2),
+                                                                                       card_kv_store.get(3),
+                                                                                       card_kv_store.get(4),
+                                                                                       card_kv_store.get(5),
+                                                                                       card_kv_store.get(6),
+                                                                                       card_kv_store.get(7),
+                                                                                       card_kv_store.get(8),
+                                                                                       card_kv_store.get(9),
+                                                                                       card_kv_store.get(10),
+                                                                                       card_kv_store.get(11),
+                                                                                       card_kv_store.get(12),
+                                                                                       card_kv_store.get(13),
+                                                                                       card_kv_store.get(14),
+                                                                                       card_kv_store.get(15),
+                                                                                       card_kv_store.get(16)),
+          1, 2, 3, 4)
+
+
 # Dictionary which stores all the values to be used in the game
 card_kv_store: dict[int] = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 6,
                             15: 7, 16: 8}
@@ -60,17 +86,8 @@ while playing:
 
     # code for each round
     while round_in_progress:
-        # prints out the current "board"
-        print("A {} {} {} {}\n"
-              "B {} {} {} {}\n"
-              "C {} {} {} {}\n"
-              "D {} {} {} {}\n"
-              "\u2588".format(card_kv_store.get(1), card_kv_store.get(2), card_kv_store.get(3), card_kv_store.get(4),
-                              card_kv_store.get(5), card_kv_store.get(6), card_kv_store.get(7), card_kv_store.get(8),
-                              card_kv_store.get(9), card_kv_store.get(10), card_kv_store.get(11), card_kv_store.get(12),
-                              card_kv_store.get(13), card_kv_store.get(14), card_kv_store.get(15),
-                              card_kv_store.get(16)),
-              1, 2, 3, 4)
+        # prints out the current board from the function i made earlier
+        game_board_print()
         # when the user plots a point (chooses rows and columns)
         while plotting:
             # catches errors (specifically catching integer ValueError)
@@ -155,21 +172,10 @@ while playing:
             round_in_progress: bool = False
             # adds the win to the user
             wins += 1
-            # shows the user the completed table
-            print("✨ Looks like you paired up all the numbers! ✨\n"
-                  "A {} {} {} {}\n"
-                  "B {} {} {} {}\n"
-                  "C {} {} {} {}\n"
-                  "D {} {} {} {}\n"
-                  "\u2588".format(card_kv_store.get(1), card_kv_store.get(2), card_kv_store.get(3),
-                                  card_kv_store.get(4),
-                                  card_kv_store.get(5), card_kv_store.get(6), card_kv_store.get(7),
-                                  card_kv_store.get(8),
-                                  card_kv_store.get(9), card_kv_store.get(10), card_kv_store.get(11),
-                                  card_kv_store.get(12),
-                                  card_kv_store.get(13), card_kv_store.get(14), card_kv_store.get(15),
-                                  card_kv_store.get(16)),
-                  1, 2, 3, 4)
+            # tells the user they completed the game
+            print("✨ Looks like you paired up all the numbers! ✨")
+            # prints out completed board
+            game_board_print()
             # asks the user if they would like to keep playing
             round_end: str = input(
                 "Well done! Game completed, would you like to play another round?\nType 'y' to play another round, "
