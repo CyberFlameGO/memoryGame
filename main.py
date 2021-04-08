@@ -18,7 +18,7 @@ def clear_py_console(sec: object, lines: object) -> object:
     """
     time.sleep(sec)  # sleeps for a period of time specified when the function is called
     print("\n" * lines)  # sends a newline * specified amount (effectively clearing the console)
-s
+
 
 def game_board_print() -> object:
     """
