@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="lol">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +32,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -127,20 +126,6 @@
       <workItem from="1617752457062" duration="566000" />
       <workItem from="1617753042908" duration="174000" />
       <workItem from="1617753230805" duration="202000" />
-    </task>
-    <task id="LOCAL-00013" summary="OMG it WORKS (extremely messy tho)">
-      <created>1616653451305</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1616653451305</updated>
-    </task>
-    <task id="LOCAL-00014" summary="OMG it WORKS (extremely messy tho)">
-      <created>1616655150612</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1616655150612</updated>
     </task>
     <task id="LOCAL-00015" summary="OMG it WORKS (extremely messy tho)">
       <created>1616709675286</created>
@@ -471,7 +456,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617757165943</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="YAE">
+      <created>1617920647015</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1617920647016</updated>
+    </task>
+    <task id="LOCAL-00063" summary="s">
+      <created>1617920940410</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1617920940410</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,8 +491,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="I'm gonna try and make my commit messages somewhat useful. &#10;This commit adds a loop for the round" />
-    <MESSAGE value="Cleans up valid columns." />
     <MESSAGE value="adds TODO" />
     <MESSAGE value="adds error catching and loops, and tests some dumb idea" />
     <MESSAGE value="rewords some things, starts to comment code" />
@@ -517,7 +514,9 @@
     <MESSAGE value="looks gooderer" />
     <MESSAGE value="emooogify code lol mad?" />
     <MESSAGE value="lol" />
-    <option name="LAST_COMMIT_MESSAGE" value="lol" />
+    <MESSAGE value="YAE" />
+    <MESSAGE value="s" />
+    <option name="LAST_COMMIT_MESSAGE" value="s" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
