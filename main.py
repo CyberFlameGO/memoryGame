@@ -18,7 +18,7 @@ def clear_py_console(sec: object, lines: object) -> object:
     """
     time.sleep(sec)  # sleeps for a period of time specified when the function is called
     print("\n" * lines)  # sends a newline * specified amount (effectively clearing the console)
-
+s
 
 # Dictionary which stores all the values to be used in the game
 card_kv_store: dict[int] = {1: 1, 2: 2, 3: 3, 4: 4, 5: 5, 6: 6, 7: 7, 8: 8, 9: 1, 10: 2, 11: 3, 12: 4, 13: 5, 14: 6,
