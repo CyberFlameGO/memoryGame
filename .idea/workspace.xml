@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="workspace.xml file update due to switching computers" />
+    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="saves 'boop' to workspace.xml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -447,7 +447,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617929198146</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="saves 'boop' to workspace.xml">
+      <created>1617929239898</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1617929239898</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,7 +475,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="stuf" />
     <MESSAGE value="OMG it WORKS (extremely messy tho)" />
     <MESSAGE value="fix code" />
     <MESSAGE value="comment 51/52&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
@@ -493,7 +499,8 @@
     <MESSAGE value="workspace update" />
     <MESSAGE value="gpg verification successful on mbp16&quot;" />
     <MESSAGE value="workspace.xml file update due to switching computers" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml file update due to switching computers" />
+    <MESSAGE value="saves 'boop' to workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="saves 'boop' to workspace.xml" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />

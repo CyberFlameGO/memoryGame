@@ -20,6 +20,7 @@ def clear_py_console(sec: object, lines: object) -> object:
     print("\n" * lines)  # sends a newline * specified amount (effectively clearing the console)
 
 
+# function which prints the game board for the round; created to reduce duplicated code
 def game_board_print() -> object:
     """
     :rtype: object
