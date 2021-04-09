@@ -145,8 +145,8 @@ while playing:
                 # plot-point 1
                 else:
                     pos2: str = row2 + str(column2)
-                    numeric_pos2 = plot_number_translation.get(pos2)  # translates the plotted point into a number
-                    match2 = card_list_values[numeric_pos2 - 1]
+                    numeric_pos2: int = plot_number_translation.get(pos2)  # translates the plotted point into a number
+                    match2: str = card_list_values[numeric_pos2 - 1]
                     plotting: bool = False  # plotted position was in correct bounds so we escape the loop
             else:
                 print("⚠ Invalid input, try again.")
