@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="saves 'boop' to workspace.xml" />
+    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="style: adds variable types">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,20 +112,7 @@
       <workItem from="1616976292662" duration="1252000" />
       <workItem from="1616988947496" duration="10520000" />
       <workItem from="1617760045314" duration="762000" />
-    </task>
-    <task id="LOCAL-00001" summary="thing">
-      <created>1616540343814</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1616540343814</updated>
-    </task>
-    <task id="LOCAL-00002" summary="thing">
-      <created>1616540459267</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1616540459267</updated>
+      <workItem from="1618177859945" duration="1531000" />
     </task>
     <task id="LOCAL-00003" summary="thing">
       <created>1616543499412</created>
@@ -454,7 +443,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617929239898</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="style: comment 'game_board_print()' function">
+      <created>1617929939035</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1617929939035</updated>
+    </task>
+    <task id="LOCAL-00051" summary="style: adds variable types">
+      <created>1617930097737</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1617930097737</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,8 +478,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="OMG it WORKS (extremely messy tho)" />
-    <MESSAGE value="fix code" />
     <MESSAGE value="comment 51/52&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
     <MESSAGE value="add coverage&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
     <MESSAGE value="add some functionality&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
@@ -500,7 +501,9 @@
     <MESSAGE value="gpg verification successful on mbp16&quot;" />
     <MESSAGE value="workspace.xml file update due to switching computers" />
     <MESSAGE value="saves 'boop' to workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="saves 'boop' to workspace.xml" />
+    <MESSAGE value="style: comment 'game_board_print()' function" />
+    <MESSAGE value="style: adds variable types" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: adds variable types" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -537,6 +540,6 @@
     </GetOptions>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/memoryGame$main.coverage" NAME="main Coverage Results" MODIFIED="1617928711356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/memoryGame$main.coverage" NAME="main Coverage Results" MODIFIED="1618178086872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
