@@ -109,6 +109,7 @@ while playing:
                 except ValueError:
                     print("⚠ Invalid input! Please use a round number.")  # tells the user they didn't type an integer
             error_catching: bool = True  # changes the variable to True because the code is recycled later on
+
             # if the inputted rows and columns are valid
             if row1 in valid_rows and 1 <= column1 <= 4:
                 # adds the variables into one "word" (the colon after the var-name is for annotation, which was a
