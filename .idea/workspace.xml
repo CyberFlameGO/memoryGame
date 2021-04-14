@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="worspace">
+    <list default="true" id="f0b1d62a-a171-4c22-84a2-79a959be7fad" name="Default Changelist" comment="style: adds variable types">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="Git.Pull.Settings">
-    <option name="OPTIONS">
-      <set>
-        <option value="REBASE" />
-      </set>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -31,11 +21,6 @@
         <option name="argument" value="--tags" />
         <option name="title" value="All" />
       </GitPushTagMode>
-    </option>
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="9d5656d7915f284b76cfebf32b7db67d4f36d7bb" />
-      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
@@ -78,8 +63,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -113,7 +97,7 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
-    <configuration>C:\Users\19380\AppData\Roaming\Subversion</configuration>
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -127,14 +111,113 @@
       <workItem from="1616730873337" duration="2513000" />
       <workItem from="1616976292662" duration="1252000" />
       <workItem from="1616988947496" duration="10520000" />
-      <workItem from="1617143833458" duration="4386000" />
-      <workItem from="1617149293941" duration="5000" />
-      <workItem from="1617150436163" duration="74000" />
-      <workItem from="1617752131495" duration="70000" />
-      <workItem from="1617752218758" duration="221000" />
-      <workItem from="1617752457062" duration="566000" />
-      <workItem from="1617753042908" duration="174000" />
-      <workItem from="1617753230805" duration="202000" />
+      <workItem from="1617760045314" duration="762000" />
+      <workItem from="1618177859945" duration="1531000" />
+    </task>
+    <task id="LOCAL-00003" summary="thing">
+      <created>1616543499412</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616543499412</updated>
+    </task>
+    <task id="LOCAL-00004" summary="thing">
+      <created>1616544225654</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616544225655</updated>
+    </task>
+    <task id="LOCAL-00005" summary="thing">
+      <created>1616544796795</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616544796795</updated>
+    </task>
+    <task id="LOCAL-00006" summary="thing">
+      <created>1616644955530</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616644955530</updated>
+    </task>
+    <task id="LOCAL-00007" summary="thing">
+      <created>1616645223964</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1616645223964</updated>
+    </task>
+    <task id="LOCAL-00008" summary="thing">
+      <created>1616645230431</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616645230431</updated>
+    </task>
+    <task id="LOCAL-00009" summary="thing">
+      <created>1616647141928</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1616647141928</updated>
+    </task>
+    <task id="LOCAL-00010" summary="stuf">
+      <created>1616648168380</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1616648168380</updated>
+    </task>
+    <task id="LOCAL-00011" summary="stuf">
+      <created>1616651271971</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1616651271971</updated>
+    </task>
+    <task id="LOCAL-00012" summary="stuf">
+      <created>1616651283827</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616651283827</updated>
+    </task>
+    <task id="LOCAL-00013" summary="OMG it WORKS (extremely messy tho)">
+      <created>1616653451305</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616653451305</updated>
+    </task>
+    <task id="LOCAL-00014" summary="OMG it WORKS (extremely messy tho)">
+      <created>1616655150612</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1616655150612</updated>
+    </task>
+    <task id="LOCAL-00015" summary="OMG it WORKS (extremely messy tho)">
+      <created>1616709675286</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1616709675287</updated>
+    </task>
+    <task id="LOCAL-00016" summary="OMG it WORKS (extremely messy tho)">
+      <created>1616709809952</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1616709809952</updated>
+    </task>
+    <task id="LOCAL-00017" summary="OMG it WORKS (extremely messy tho)">
+      <created>1616710648347</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1616710648347</updated>
     </task>
     <task id="LOCAL-00018" summary="OMG it WORKS (extremely messy tho)">
       <created>1616710707772</created>
@@ -332,154 +415,49 @@
       <option name="project" value="LOCAL" />
       <updated>1617063535206</updated>
     </task>
-    <task id="LOCAL-00046" summary="style: adds comments, removes redundant code">
-      <created>1617063999325</created>
+    <task id="LOCAL-00046" summary="workspace update">
+      <created>1617924362115</created>
       <option name="number" value="00046" />
       <option name="presentableId" value="LOCAL-00046" />
       <option name="project" value="LOCAL" />
-      <updated>1617063999325</updated>
+      <updated>1617924362115</updated>
     </task>
-    <task id="LOCAL-00047" summary="style: adds comments">
-      <created>1617145374553</created>
+    <task id="LOCAL-00047" summary="gpg verification successful on mbp16&quot;">
+      <created>1617924409755</created>
       <option name="number" value="00047" />
       <option name="presentableId" value="LOCAL-00047" />
       <option name="project" value="LOCAL" />
-      <updated>1617145374553</updated>
+      <updated>1617924409755</updated>
     </task>
-    <task id="LOCAL-00048" summary="style: adds annotation to variables">
-      <created>1617146208193</created>
+    <task id="LOCAL-00048" summary="workspace.xml file update due to switching computers">
+      <created>1617929198146</created>
       <option name="number" value="00048" />
       <option name="presentableId" value="LOCAL-00048" />
       <option name="project" value="LOCAL" />
-      <updated>1617146208193</updated>
+      <updated>1617929198146</updated>
     </task>
-    <task id="LOCAL-00049" summary="style: adds annotation to variables">
-      <created>1617147745330</created>
+    <task id="LOCAL-00049" summary="saves 'boop' to workspace.xml">
+      <created>1617929239898</created>
       <option name="number" value="00049" />
       <option name="presentableId" value="LOCAL-00049" />
       <option name="project" value="LOCAL" />
-      <updated>1617147745330</updated>
+      <updated>1617929239898</updated>
     </task>
-    <task id="LOCAL-00050" summary="style: makes print look nicer-er">
-      <created>1617148863119</created>
+    <task id="LOCAL-00050" summary="style: comment 'game_board_print()' function">
+      <created>1617929939035</created>
       <option name="number" value="00050" />
       <option name="presentableId" value="LOCAL-00050" />
       <option name="project" value="LOCAL" />
-      <updated>1617148863119</updated>
+      <updated>1617929939035</updated>
     </task>
-    <task id="LOCAL-00051" summary="patch">
-      <created>1617752724531</created>
+    <task id="LOCAL-00051" summary="style: adds variable types">
+      <created>1617930097737</created>
       <option name="number" value="00051" />
       <option name="presentableId" value="LOCAL-00051" />
       <option name="project" value="LOCAL" />
-      <updated>1617752724531</updated>
+      <updated>1617930097737</updated>
     </task>
-    <task id="LOCAL-00052" summary="test">
-      <created>1617754353526</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1617754353526</updated>
-    </task>
-    <task id="LOCAL-00053" summary="a">
-      <created>1617754370817</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1617754370817</updated>
-    </task>
-    <task id="LOCAL-00054" summary="ae">
-      <created>1617754540046</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1617754540046</updated>
-    </task>
-    <task id="LOCAL-00055" summary="fix: i swear i have big brain no kill pls">
-      <created>1617754676092</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1617754676092</updated>
-    </task>
-    <task id="LOCAL-00056" summary="looks gooderer">
-      <created>1617754756339</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1617754756339</updated>
-    </task>
-    <task id="LOCAL-00057" summary="emooogify code lol mad?">
-      <created>1617755165137</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1617755165137</updated>
-    </task>
-    <task id="LOCAL-00058" summary="lol">
-      <created>1617755309262</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1617755309262</updated>
-    </task>
-    <task id="LOCAL-00059" summary="lol">
-      <created>1617756629311</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1617756629311</updated>
-    </task>
-    <task id="LOCAL-00060" summary="lol">
-      <created>1617756902857</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1617756902857</updated>
-    </task>
-    <task id="LOCAL-00061" summary="lol">
-      <created>1617757165943</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1617757165943</updated>
-    </task>
-    <task id="LOCAL-00062" summary="YAE">
-      <created>1617920647015</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1617920647016</updated>
-    </task>
-    <task id="LOCAL-00063" summary="s">
-      <created>1617920940410</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1617920940410</updated>
-    </task>
-    <task id="LOCAL-00064" summary="patches and workspace.xml lol">
-      <created>1618357415737</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1618357415737</updated>
-    </task>
-    <task id="LOCAL-00065" summary="200 lines pog">
-      <created>1618357744011</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1618357744011</updated>
-    </task>
-    <task id="LOCAL-00066" summary="update code&#10;pneumonoultramicroscopicsilicovolcanoconiosis">
-      <created>1618358661272</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1618358661272</updated>
-    </task>
-    <option name="localTasksCounter" value="67" />
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -500,32 +478,32 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="comment 51/52&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
+    <MESSAGE value="add coverage&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
+    <MESSAGE value="add some functionality&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
+    <MESSAGE value="d" />
+    <MESSAGE value="Fix requirements.txt so it's actually useful&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
+    <MESSAGE value="Remove specific versions so it always asks for latest version.&#10;&#10;Signed-off-by: CyberFlame &lt;cyberflameu@gmail.com&gt;" />
+    <MESSAGE value="I'm goa" />
+    <MESSAGE value="I'm gonna try and make my commit messages somewhat useful. &#10;This commit adds a loop for the round" />
+    <MESSAGE value="Cleans up valid columns." />
+    <MESSAGE value="adds TODO" />
+    <MESSAGE value="adds error catching and loops, and tests some dumb idea" />
+    <MESSAGE value="rewords some things, starts to comment code" />
+    <MESSAGE value="refactor: fixed the dumb thing i was testing" />
     <MESSAGE value="quickfix with 'continue'" />
     <MESSAGE value="quickfix didnt work but i fixed it, and used DeMorgan law from ide to make an if statement cleaner. it keeps suggesting to invert my if statement but idk" />
     <MESSAGE value="this stupid law just broke stuff and confused me so i dumped it" />
     <MESSAGE value="AYYY I FKIN FIXED IT BBGIRL" />
     <MESSAGE value="style: fixed style" />
-    <MESSAGE value="workspace update" />
     <MESSAGE value="fix: fixes a few errors&#10;style: adds comments, removes redundant code" />
-    <MESSAGE value="style: adds comments, removes redundant code" />
-    <MESSAGE value="style: adds comments" />
-    <MESSAGE value="style: adds annotation to variables" />
-    <MESSAGE value="style: makes print look nicer-er" />
-    <MESSAGE value="patch" />
-    <MESSAGE value="test" />
-    <MESSAGE value="a" />
-    <MESSAGE value="ae" />
-    <MESSAGE value="fix: i swear i have big brain no kill pls" />
-    <MESSAGE value="looks gooderer" />
-    <MESSAGE value="emooogify code lol mad?" />
-    <MESSAGE value="lol" />
-    <MESSAGE value="YAE" />
-    <MESSAGE value="s" />
-    <MESSAGE value="patches and workspace.xml lol" />
-    <MESSAGE value="200 lines pog" />
-    <MESSAGE value="update code&#10;pneumonoultramicroscopicsilicovolcanoconiosis" />
-    <MESSAGE value="worspace" />
-    <option name="LAST_COMMIT_MESSAGE" value="worspace" />
+    <MESSAGE value="workspace update" />
+    <MESSAGE value="gpg verification successful on mbp16&quot;" />
+    <MESSAGE value="workspace.xml file update due to switching computers" />
+    <MESSAGE value="saves 'boop' to workspace.xml" />
+    <MESSAGE value="style: comment 'game_board_print()' function" />
+    <MESSAGE value="style: adds variable types" />
+    <option name="LAST_COMMIT_MESSAGE" value="style: adds variable types" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -562,6 +540,6 @@
     </GetOptions>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/memoryGame$main.coverage" NAME="main Coverage Results" MODIFIED="1618361093221" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/memoryGame$main.coverage" NAME="main Coverage Results" MODIFIED="1618178086872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
