@@ -67,12 +67,13 @@ playing: bool = True
 
 # prints board layout to introduce the user to the game
 print("Welcome to a game of Memory Game!\nThis is what the board looks like!\n\n"
-      "A * * * *\n"
-      "B * * * *\n"
-      "C * * * *\n"
-      "D * * * *\n"
-      "\u2588",
-      1, 2, 3, 4,
+      "   ", 1, 2, 3, 4, "\n"
+                         "  \u2588 \u2588 \u2588 \u2588 \u2588 \u2588\n"
+                         "A \u2588 * * * * \u2588 A\n"
+                         "B \u2588 * * * * \u2588 B\n"
+                         "C \u2588 * * * * \u2588 C\n"
+                         "D \u2588 * * * * \u2588 D\n"
+                         "  \u2588 \u2588 \u2588 \u2588 \u2588 \u2588\n   ", 1, 2, 3, 4,
       "\nYou choose a position by its line (row) number and column letter, kinda like in Chess! I hope you enjoy!\n\n")
 
 # loop for the game
