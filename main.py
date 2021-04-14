@@ -123,7 +123,6 @@ while playing:
                 plotting: bool = False  # plotted position was in correct bounds so we escape the loop
             else:
                 print("⚠ Invalid input, try again.")  # the user's input was out of bounds
-
         plotting: bool = True  # beep boop, recycled variable
 
         while plotting:
